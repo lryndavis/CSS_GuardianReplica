@@ -1,0 +1,43 @@
+//Columns Styling
+
+.article {
+  width: 100%;
+  background-color: $color-primary--body;
+}
+
+h2 {
+  @extend %downcase;
+  color: $color-headline;
+  margin: 10px 0 10px 0;
+}
+
+.badass-eagle {
+  width: 100%;
+  border: 1px solid $color-headline;
+}
+
+.headline {
+  color: $color-headline;
+  font-size: $base__font-size * 1.25;
+}
+
+.headline-text {
+  color: $color-headline--text;
+  font-size: $base__font-size * 1.25;
+}
+
+hr {
+  border-top: 1px dotted #8c8b8b;
+  width: 40%;
+  align: left;
+}
+
+figcaption {
+  padding-left: 5px;
+}
+
+.fa-commenting {
+  color: $color-headline--text;
+  padding: 10px 5px 5px 5px;
+  font-size: $base__font-size * 0.8;
+}

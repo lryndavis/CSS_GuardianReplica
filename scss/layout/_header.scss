@@ -1,0 +1,50 @@
+//Header Styling
+
+
+header {
+  position: absolute;
+  background-color: $color-header;
+  height: 65px;
+  width: 100%;
+}
+
+.blue-text {
+  color: $pale-blue;
+}
+
+.icon-bar {
+  margin-left: 5px;
+}
+
+h1 {
+  @extend %downcase;
+  color: $color-header-text;
+  float: right;
+  margin: 0 15px 0 0;
+  }
+
+.navbar-top {
+  display: none;
+}
+
+.navbar-bottom {
+  overflow: hidden;
+  position: relative;
+  top: 7px;
+  right: 0;
+  width: 100%;
+  height: 55%;
+  padding: 5px 0 5px 0;
+  background-color: $color-navbar;
+}
+
+  a {
+    line-height: 1.5em;
+    font-size: em(18px);
+    color: $color-header-text;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }

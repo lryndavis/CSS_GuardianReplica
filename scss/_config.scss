@@ -1,0 +1,65 @@
+
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+
+$font-url--google: '(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700)';
+$font-family--primary: 'Libre Baskerville', 'Georgia', serif;
+$font-family--secondary: 'Georgia', serif;
+
+// Font Weights
+
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+
+//Descriptive Base Colors
+
+
+$black: #000;
+$white: #fff;
+$grey-neutral: #E4E4E4;
+$grey-neutral--dark: darken($grey-neutral, 50%);
+
+$orient-blue: #005689;
+$regal-blue: #00456E;
+$pale-blue: #AADCE6;
+
+$magenta: #84194B;
+$baby-pink: #FDADBA;
+
+$burnt-red: #CC2B12;
+$mustard-yellow: #E67522;
+
+
+//Color Usage
+
+//colors for header:
+
+$color-header: $orient-blue;
+$color-navbar: $regal-blue;
+$color-header-text: $white;
+
+//colors for body:
+
+$color-primary--body: $grey-neutral;
+$color-secondary--body: $white;
+
+//Text Colors:
+
+$color-body-text: $black;
+$color-headline: $regal-blue;
+$color-headline--text: $grey-neutral--dark;
+$color-headline--secondary: $burnt-red;
+$color-headline--tertiary: $mustard-yellow;
+
+//pink accent colors
+
+$color-accent: $magenta;
+$color-accent-text: $baby-pink;
+
+//Text
+
+$base__font-size: 16px;
+$base__line: 24px;
