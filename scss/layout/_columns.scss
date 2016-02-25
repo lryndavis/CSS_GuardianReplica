@@ -1,18 +1,109 @@
 //Columns Styling
 
-.article {
-  width: 100%;
-  background-color: $color-primary--body;
+
+.weather-column p {
+  display: none;
 }
+
+.container2 {
+  @include media($mobile) {
+
+  @include fill-parent();
+  @include row(table);
+  height: 300px;
+  }
+}
+
+.container3 {
+  @include media($mobile) {
+
+  @include fill-parent();
+  @include row(table);
+  height: 300px;
+  }
+}
+
+.main-article {
+  border: 1px solid black;
+  background-color: $color-primary--body;
+  padding: 0;
+
+  @include media($mobile) {
+    @include span-columns(9);
+  }
+}
+
+.side-column {
+  border: 1px solid black;
+
+  @include media($mobile) {
+    @include span-columns(3);
+  }
+}
+
+.side-column h3 {
+  padding: 0;
+  margin: 0;
+}
+
+
+.article-featured {
+  border: 1px solid black;
+  background-color: $color-primary--body;
+
+  @include media($mobile) {
+    @include span-columns(3);
+
+  }
+}
+
+.article-secondary {
+  border: 1px solid black;
+  background-color: $color-primary--body;
+
+  @include media($mobile) {
+    @include span-columns(3);
+
+  }
+}
+
+
+    //
+    // @include media($mobile) {
+    //   @include span-columns(3);
+    // }
+  // @media #{$brk-narrow} {
+  //   @include span-columns(6);
+  //   display: none;
+  //
+  //
+  // @media #{$brk-wide} {
+  //     @include span-columns(2);
+  //   }
+  // }
+
+
+// .side-column {
+//   // @include span-columns(3);
+// }
+//
+// .nested-column {
+//   // @include span-columns(2 of 6);
+//   background-color: $color-primary--body;
+//   height: 400px;
+// }
+//
 
 h2 {
   @extend %downcase;
   color: $color-headline;
-  margin: 10px 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
+
+
 .badass-eagle {
-  width: 100%;
+  width: 60%;
   border: 1px solid $color-headline;
 }
 
