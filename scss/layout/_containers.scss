@@ -7,9 +7,11 @@
 
     @include media($mobile) {
       margin-left: auto;
-      right: 0;
+      margin-bottom: 20px;
+
     }
     @include media($desktop) {
       margin-left: auto;
+
     }
 }

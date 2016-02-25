@@ -8,8 +8,22 @@ html {
 h1 {
   text-transform: lowercase; }
 
-.weather, .main-article, .side-column, .article-featured, .stacked-article {
+.weather, .main-article, .side-column, .article-featured, .stacked-article, .article-featured-fourth-row {
   border-top: 1px solid #AADCE6; }
+
+.pink h4, h4 {
+  color: #00456E;
+  font-size: 1.35em; }
+
+.pink h4 {
+  color: #FDADBA; }
+
+h5 {
+  color: #00456E;
+  font-size: 1.1em; }
+
+.main-article, .side-column, figcaption {
+  padding-left: 5px; }
 
 html {
   font-family: sans-serif;
@@ -207,8 +221,8 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 24.51993%; }
+      margin-right: 0.88763%;
+      width: 24.33428%; }
       .weather:last-child {
         margin-right: 0; } }
 
@@ -219,16 +233,16 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 74.83998%; }
+      margin-right: 0.88763%;
+      width: 74.77809%; }
       .main-article:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 680px) and (min-width: 950px) {
     .main-article {
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 49.67995%; }
+      margin-right: 0.88763%;
+      width: 49.55618%; }
       .main-article:last-child {
         margin-right: 0; } }
 
@@ -239,8 +253,8 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 16.13326%;
+      margin-right: 0.88763%;
+      width: 15.92697%;
       margin-right: 0; }
       .side-column:last-child {
         margin-right: 0; } }
@@ -249,8 +263,8 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 16.13326%;
+      margin-right: 0.88763%;
+      width: 15.92697%;
       margin-right: 0; }
       .side-column:last-child {
         margin-right: 0; } }
@@ -262,8 +276,8 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 7.74658%; }
+      margin-right: 0.88763%;
+      width: 7.51967%; }
       .offset-col:last-child {
         margin-right: 0; } }
 
@@ -274,8 +288,8 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 24.51993%; }
+      margin-right: 0.88763%;
+      width: 24.33428%; }
       .weather-empty:last-child {
         margin-right: 0; } }
 
@@ -286,18 +300,22 @@ body {
       height: 300px;
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 22.42326%; }
+      margin-right: 0.88763%;
+      width: 22.23245%; }
       .article-featured:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 680px) and (min-width: 950px) {
     .article-featured {
       float: left;
       display: block;
-      margin-right: 0.64009%;
-      width: 16.13326%; }
+      margin-right: 0.88763%;
+      width: 15.92697%; }
       .article-featured:last-child {
         margin-right: 0; } }
+
+.pink {
+  background-color: #991d57;
+  color: #fff; }
 
 .stacked-article {
   background-color: #f3f3f3;
@@ -306,10 +324,66 @@ body {
   height: 100px;
   width: 98%; }
 
+.article-stacking {
+  background-color: #991d57;
+  color: #fff; }
+  @media screen and (min-width: 680px) {
+    .article-stacking {
+      height: 400px;
+      float: left;
+      display: block;
+      margin-right: 0.88763%;
+      width: 49.55618%; }
+      .article-stacking:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 680px) and (min-width: 950px) {
+    .article-stacking {
+      float: left;
+      display: block;
+      margin-right: 0.88763%;
+      width: 32.74158%; }
+      .article-stacking:last-child {
+        margin-right: 0; } }
+
+.article-stacking-row p {
+  margin: 0;
+  width: 65%;
+  float: right; }
+
+.article-stacking-row {
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  border-bottom: 10px solid white; }
+
+@media screen and (min-width: 680px) {
+  .article-featured-fourth-row {
+    height: 400px;
+    float: left;
+    display: block;
+    margin-right: 0.88763%;
+    width: 20.13062%; }
+    .article-featured-fourth-row:last-child {
+      margin-right: 0; } }
+  @media screen and (min-width: 680px) and (min-width: 950px) {
+    .article-featured-fourth-row {
+      float: left;
+      display: block;
+      margin-right: 0.88763%;
+      width: 15.92697%; }
+      .article-featured-fourth-row:last-child {
+        margin-right: 0; } }
+
 .article-featured img {
   width: 30%; }
   @media screen and (min-width: 680px) {
     .article-featured img {
+      width: 100%; } }
+
+.article-featured-fourth-row img {
+  width: 30%; }
+  @media screen and (min-width: 680px) {
+    .article-featured-fourth-row img {
       width: 100%; } }
 
 .badass-eagle {
@@ -317,7 +391,7 @@ body {
   border: 1px solid #00456E; }
   @media screen and (min-width: 680px) {
     .badass-eagle {
-      width: 70%;
+      width: 65%;
       float: right; } }
 
 .side-column img {
@@ -326,41 +400,35 @@ body {
     .side-column img {
       width: 100%; } }
 
+.article-stacking-row img {
+  width: 35%;
+  float: left; }
+
 .fa-commenting {
   color: #656565;
   padding: 10px 5px 5px 5px;
   font-size: 12.8px; }
 
-.headline {
-  color: #00456E;
-  font-size: 20px; }
-
 .headline-text {
-  color: #656565;
-  font-size: 20px; }
-
-figcaption {
-  padding-left: 5px; }
-  @media screen and (min-width: 680px) {
-    figcaption {
-      width: 25%;
-      float: left; } }
-
-h3 {
   color: #656565; }
-  @media screen and (min-width: 950px) {
-    h3 {
-      display: none; } }
+
+@media screen and (min-width: 680px) {
+  figcaption {
+    width: 25%;
+    float: left; } }
+
+@media screen and (min-width: 950px) {
+  h3 {
+    display: none; } }
 
 h4 {
   margin: 0; }
 
-.side-column p {
-  text-align: left;
-  width: 100%; }
+h5 {
+  margin: 0; }
 
 .container {
-  max-width: 78.125em;
+  max-width: 90.625em;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -372,7 +440,7 @@ h4 {
   @media screen and (min-width: 680px) {
     .container {
       margin-left: auto;
-      right: 0; } }
+      margin-bottom: 20px; } }
   @media screen and (min-width: 950px) {
     .container {
       margin-left: auto; } }

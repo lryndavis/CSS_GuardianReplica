@@ -17,3 +17,22 @@
 %border-top {
   border-top: 1px solid $pale-blue;
 }
+
+%blue-headline--big {
+  color: $color-headline;
+  font-size: 1.35em;
+}
+
+%pink-headline--big {
+  @extend %blue-headline--big;
+  color: $color-accent-text;
+}
+
+%blue-headline--small {
+  color: $color-headline;
+  font-size: 1.1em;
+}
+
+%col-padding {
+  padding-left: 5px;
+}

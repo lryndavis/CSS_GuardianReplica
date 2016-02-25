@@ -13,6 +13,7 @@
 }
 
 .main-article {
+  @extend %col-padding;
   @extend %border-top;
   background-color: $color-primary--body;
 
@@ -27,6 +28,7 @@
 }
 
 .side-column {
+  @extend %col-padding;
   @extend %border-top;
   background-color: $color-primary--body;
   @include media($mobile) {
@@ -76,6 +78,15 @@
   }
 }
 
+
+.pink {
+  background-color: $color-accent;
+  color: $color-body-text--secondary;
+  h4 {
+    @extend %pink-headline--big;
+  }
+}
+
 .stacked-article {
   background-color: $color-primary--body;
   @extend %border-top;
@@ -83,6 +94,49 @@
   padding: 5px;
   height: 100px;
   width: 98%;
+}
+
+// Fourth row
+
+.article-stacking {
+  background-color: $color-accent;
+  color: $color-body-text--secondary;
+
+  @include media($mobile) {
+    height: 400px;
+    @include span-columns(6);
+
+  @include media($desktop) {
+    @include span-columns(4);
+    }
+  }
+}
+
+.article-stacking-row p {
+  margin: 0;
+  width: 65%;
+  float: right;
+}
+
+.article-stacking-row {
+  overflow: hidden;
+  height: 100px;
+  width: 100%;
+  border-bottom: 10px solid white;
+}
+
+
+
+.article-featured-fourth-row {
+  @extend %border-top;
+  @include media($mobile) {
+    height: 400px;
+    @include span-columns(2.5);
+
+  @include media($desktop) {
+    @include span-columns(2);
+    }
+  }
 }
 
 
@@ -95,12 +149,19 @@
   }
 }
 
+.article-featured-fourth-row img {
+  width: 30%;
+  @include media($mobile) {
+    width: 100%;
+  }
+}
+
 .badass-eagle {
   width: 100%;
   border: 1px solid $color-headline;
 
   @include media($mobile) {
-    width: 70%;
+    width: 65%;
     float: right;
   }
 }
@@ -112,6 +173,11 @@
   }
 }
 
+.article-stacking-row img {
+  width: 35%;
+  float: left;
+}
+
 .fa-commenting {
   color: $color-headline--text;
   padding: 10px 5px 5px 5px;
@@ -120,19 +186,12 @@
 
 //Text
 
-.headline {
-  color: $color-headline;
-  font-size: $base__font-size * 1.25;
-}
-
 .headline-text {
   color: $color-headline--text;
-  font-size: $base__font-size * 1.25;
 }
 
-
 figcaption {
-  padding-left: 5px;
+  @extend %col-padding;
 
   @include media($mobile) {
     width: 25%;
@@ -141,18 +200,17 @@ figcaption {
   }
 
 h3 {
-color: $color-headline--text;
-
   @include media($desktop) {
     display: none;
-    }
   }
-
-h4 {
- margin: 0;
 }
 
-.side-column p {
- text-align: left;
- width: 100%;
+h4 {
+  @extend %blue-headline--big;
+  margin: 0;
+}
+
+h5 {
+  @extend %blue-headline--small;
+  margin: 0;
 }

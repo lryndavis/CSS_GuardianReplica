@@ -49,6 +49,7 @@ $color-secondary--body: $white;
 //Text Colors:
 
 $color-body-text: $black;
+$color-body-text--secondary: $white;
 $color-headline: $regal-blue;
 $color-border: $regal-blue;
 $color-headline--text: $grey-neutral--dark;
@@ -57,7 +58,7 @@ $color-headline--tertiary: $mustard-yellow;
 
 //pink accent colors
 
-$color-accent: $magenta;
+$color-accent: lighten($magenta, 5%);
 $color-accent-text: $baby-pink;
 
 //Text
