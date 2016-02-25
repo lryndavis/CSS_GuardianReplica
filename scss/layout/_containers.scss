@@ -3,8 +3,6 @@
 .container {
   border: 1px solid black;
   @include outer-container;
-  overflow: hidden;
   background-color: $color-secondary--body;
-  margin-top: 25px;
-  height: auto;
+  margin-top: 20px;
 }
