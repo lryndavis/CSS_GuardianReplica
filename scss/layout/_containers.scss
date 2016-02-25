@@ -6,7 +6,8 @@
   margin-top: 20px;
 
     @include media($mobile) {
-      margin-left: 10%;
+      margin-left: auto;
+      right: 0;
     }
     @include media($desktop) {
       margin-left: auto;

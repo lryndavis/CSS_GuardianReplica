@@ -8,6 +8,9 @@ html {
 h1 {
   text-transform: lowercase; }
 
+.weather, .main-article, .side-column, .article-featured, .stacked-article {
+  border-top: 1px solid #AADCE6; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -199,7 +202,7 @@ body {
 
 .weather {
   display: none; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 950px) {
     .weather {
       height: 300px;
       float: left;
@@ -209,9 +212,21 @@ body {
       .weather:last-child {
         margin-right: 0; } }
 
+.weather-empty {
+  display: none; }
+  @media screen and (min-width: 950px) {
+    .weather-empty {
+      height: 300px;
+      float: left;
+      display: block;
+      margin-right: 0.64009%;
+      width: 24.51993%; }
+      .weather-empty:last-child {
+        margin-right: 0; } }
+
 .offset-col {
   display: none; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 950px) {
     .offset-col {
       height: 300px;
       float: left;
@@ -223,13 +238,13 @@ body {
 
 h3 {
   color: #656565; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 950px) {
     h3 {
       display: none; } }
 
 .main-article {
-  background-color: #E4E4E4; }
-  @media screen and (min-width: 550px) {
+  background-color: #f3f3f3; }
+  @media screen and (min-width: 680px) {
     .main-article {
       height: 300px;
       float: left;
@@ -238,7 +253,7 @@ h3 {
       width: 74.83998%; }
       .main-article:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 550px) and (min-width: 850px) {
+  @media screen and (min-width: 680px) and (min-width: 950px) {
     .main-article {
       float: left;
       display: block;
@@ -248,8 +263,8 @@ h3 {
         margin-right: 0; } }
 
 .side-column {
-  background-color: #E4E4E4; }
-  @media screen and (min-width: 550px) {
+  background-color: #f3f3f3; }
+  @media screen and (min-width: 680px) {
     .side-column {
       height: 300px;
       float: left;
@@ -259,7 +274,7 @@ h3 {
       margin-right: 0; }
       .side-column:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 550px) and (min-width: 850px) {
+  @media screen and (min-width: 680px) and (min-width: 950px) {
     .side-column {
       height: 300px;
       float: left;
@@ -270,9 +285,22 @@ h3 {
       .side-column:last-child {
         margin-right: 0; } }
 
+.side-column img {
+  width: 30%; }
+  @media screen and (min-width: 680px) {
+    .side-column img {
+      width: 100%; } }
+
+h4 {
+  margin: 0; }
+
+.side-column p {
+  text-align: left;
+  width: 100%; }
+
 .article-featured {
-  background-color: #E4E4E4; }
-  @media screen and (min-width: 550px) {
+  background-color: #f3f3f3; }
+  @media screen and (min-width: 680px) {
     .article-featured {
       height: 300px;
       float: left;
@@ -281,7 +309,7 @@ h3 {
       width: 22.42326%; }
       .article-featured:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 550px) and (min-width: 850px) {
+  @media screen and (min-width: 680px) and (min-width: 950px) {
     .article-featured {
       float: left;
       display: block;
@@ -290,10 +318,23 @@ h3 {
       .article-featured:last-child {
         margin-right: 0; } }
 
+.article-featured img {
+  width: 30%; }
+  @media screen and (min-width: 680px) {
+    .article-featured img {
+      width: 100%; } }
+
+.stacked-article {
+  background-color: #f3f3f3;
+  border-bottom: 5px solid white;
+  padding: 5px;
+  height: 100px;
+  width: 98%; }
+
 .badass-eagle {
   width: 100%;
   border: 1px solid #00456E; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 680px) {
     .badass-eagle {
       width: 70%;
       float: right; } }
@@ -313,7 +354,7 @@ hr {
 
 figcaption {
   padding-left: 5px; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 680px) {
     figcaption {
       width: 25%;
       float: left; } }
@@ -324,7 +365,7 @@ figcaption {
   font-size: 12.8px; }
 
 .container {
-  max-width: 68.75em;
+  max-width: 78.125em;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -333,10 +374,11 @@ figcaption {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 680px) {
     .container {
-      margin-left: 10%; } }
-  @media screen and (min-width: 850px) {
+      margin-left: auto;
+      right: 0; } }
+  @media screen and (min-width: 950px) {
     .container {
       margin-left: auto; } }
 
@@ -366,7 +408,7 @@ h1 {
   height: 30px;
   padding: 5px 0 5px 0;
   background-color: #00456E; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 680px) {
     .navbar-bottom {
       text-align: center; } }
 

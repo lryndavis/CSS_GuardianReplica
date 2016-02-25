@@ -43,13 +43,14 @@ $color-header-text: $white;
 
 //colors for body:
 
-$color-primary--body: $grey-neutral;
+$color-primary--body: lighten($grey-neutral, 6%);
 $color-secondary--body: $white;
 
 //Text Colors:
 
 $color-body-text: $black;
 $color-headline: $regal-blue;
+$color-border: $regal-blue;
 $color-headline--text: $grey-neutral--dark;
 $color-headline--secondary: $burnt-red;
 $color-headline--tertiary: $mustard-yellow;
@@ -66,5 +67,5 @@ $base__line: 24px;
 
 // Media Queries
 
-$mobile: 550px;
-$desktop: 850px;
+$mobile: 680px;
+$desktop: 950px;

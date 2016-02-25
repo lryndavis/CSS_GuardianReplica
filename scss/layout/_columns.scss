@@ -4,12 +4,24 @@
 
 .weather {
   display: none;
+    @extend %border-top;
+    @include media($desktop) {
 
-  @include media($desktop) {
     height: 300px;
     @include span-columns(3);
   }
 }
+
+.weather-empty {
+  display: none;
+    @include media($desktop) {
+
+    height: 300px;
+    @include span-columns(3);
+  }
+}
+
+
 
 .offset-col {
   display: none;
@@ -34,10 +46,11 @@
 // Top Row
 
 .main-article {
-  // border: 1px solid black;
+  @extend %border-top;
   background-color: $color-primary--body;
 
   @include media($mobile) {
+
     height: 300px;
     @include span-columns(9);
 
@@ -50,7 +63,7 @@
 }
 
 .side-column {
-  // border: 1px solid black;
+  @extend %border-top;
   background-color: $color-primary--body;
   @include media($mobile) {
     height: 300px;
@@ -65,13 +78,27 @@
   }
 }
 
+.side-column img {
+  width: 30%;
+  @include media($mobile) {
+    width: 100%;
+  }
+}
+
+ h4 {
+  margin: 0;
+}
+
+.side-column p {
+  text-align: left;
+  width: 100%;
+}
 
 // Bottom Row
 
 .article-featured {
-  // border: 1px solid black;
   background-color: $color-primary--body;
-
+  @extend %border-top;
   @include media($mobile) {
     height: 300px;
     @include span-columns(2.75);
@@ -82,7 +109,22 @@
   }
 }
 
+.article-featured img {
+  width: 30%;
+  @include media($mobile) {
+    width: 100%;
+  }
+}
 
+.stacked-article {
+  background-color: $color-primary--body;
+  @extend %border-top;
+  border-bottom: 5px solid white;
+  padding: 5px;
+  height: 100px;
+  width: 98%;
+
+}
 
 //Images, Text, and other details
 
