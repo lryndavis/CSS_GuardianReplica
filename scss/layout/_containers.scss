@@ -1,8 +1,14 @@
 //Container Styles
 
 .container {
-  border: 1px solid black;
   @include outer-container;
   background-color: $color-secondary--body;
   margin-top: 20px;
+
+    @include media($mobile) {
+      margin-left: 10%;
+    }
+    @include media($desktop) {
+      margin-left: auto;
+    }
 }
