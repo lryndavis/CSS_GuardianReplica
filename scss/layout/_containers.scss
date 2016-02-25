@@ -1,21 +1,10 @@
 //Container Styles
 
-// .wrapper {
-//   width: 98%;
-//   height: 1200px;
-//   margin: 0 auto;
-// }
-
-
-
 .container {
   border: 1px solid black;
   @include outer-container;
   overflow: hidden;
-  // margin: 0 auto;
-  // width:95%;
-  // height: 100vh;
   background-color: $color-secondary--body;
   margin-top: 25px;
-  height: 100vh;
+  height: auto;
 }

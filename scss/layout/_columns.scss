@@ -1,9 +1,10 @@
 //Columns Styling
 
-
-.weather-column p {
+.weather-column  {
   display: none;
 }
+
+// column containers
 
 .container2 {
   @include media($mobile) {
@@ -22,6 +23,8 @@
   height: 300px;
   }
 }
+
+
 
 .main-article {
   border: 1px solid black;
@@ -67,33 +70,6 @@
   }
 }
 
-
-    //
-    // @include media($mobile) {
-    //   @include span-columns(3);
-    // }
-  // @media #{$brk-narrow} {
-  //   @include span-columns(6);
-  //   display: none;
-  //
-  //
-  // @media #{$brk-wide} {
-  //     @include span-columns(2);
-  //   }
-  // }
-
-
-// .side-column {
-//   // @include span-columns(3);
-// }
-//
-// .nested-column {
-//   // @include span-columns(2 of 6);
-//   background-color: $color-primary--body;
-//   height: 400px;
-// }
-//
-
 h2 {
   @extend %downcase;
   color: $color-headline;
@@ -101,10 +77,14 @@ h2 {
 }
 
 
-
 .badass-eagle {
-  width: 60%;
+  width: 100%;
   border: 1px solid $color-headline;
+
+  @include media($mobile) {
+    width: 60%;
+    float: right;
+  }
 }
 
 .headline {
@@ -125,6 +105,11 @@ hr {
 
 figcaption {
   padding-left: 5px;
+
+  @include media($mobile) {
+    width: 35%;
+    float: left;
+  }
 }
 
 .fa-commenting {

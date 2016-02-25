@@ -197,7 +197,7 @@ body {
   font-weight: 400;
   background-color: #fff; }
 
-.weather-column p {
+.weather-column {
   display: none; }
 
 @media screen and (min-width: 480px) {
@@ -257,8 +257,12 @@ h2 {
   margin: 0 0 10px 0; }
 
 .badass-eagle {
-  width: 60%;
+  width: 100%;
   border: 1px solid #00456E; }
+  @media screen and (min-width: 480px) {
+    .badass-eagle {
+      width: 60%;
+      float: right; } }
 
 .headline {
   color: #00456E;
@@ -275,6 +279,10 @@ hr {
 
 figcaption {
   padding-left: 5px; }
+  @media screen and (min-width: 480px) {
+    figcaption {
+      width: 35%;
+      float: left; } }
 
 .fa-commenting {
   color: #656565;
@@ -289,7 +297,7 @@ figcaption {
   overflow: hidden;
   background-color: #fff;
   margin-top: 25px;
-  height: 100vh; }
+  height: auto; }
   .container::after {
     clear: both;
     content: "";
