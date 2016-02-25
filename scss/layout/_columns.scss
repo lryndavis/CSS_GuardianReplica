@@ -1,6 +1,6 @@
 //Columns Styling
 
-// column containers
+// Top Row
 
 .weather {
   display: none;
@@ -12,52 +12,16 @@
   }
 }
 
-.weather-empty {
-  display: none;
-    @include media($desktop) {
-
-    height: 300px;
-    @include span-columns(3);
-  }
-}
-
-
-
-.offset-col {
-  display: none;
-
-  @include media($desktop) {
-    height: 300px;
-    @include span-columns(1)
-  }
-}
-
-
-  h3 {
-  color: $color-headline--text;
-
-  @include media($desktop) {
-    display: none;
-  }
-
-}
-
-
-// Top Row
-
 .main-article {
   @extend %border-top;
   background-color: $color-primary--body;
 
   @include media($mobile) {
-
     height: 300px;
     @include span-columns(9);
 
-
-  @include media($desktop) {
+    @include media($desktop) {
     @include span-columns(6);
-
     }
   }
 }
@@ -78,23 +42,26 @@
   }
 }
 
-.side-column img {
-  width: 30%;
-  @include media($mobile) {
-    width: 100%;
+.offset-col {
+  display: none;
+
+  @include media($desktop) {
+    height: 300px;
+    @include span-columns(1)
   }
 }
 
- h4 {
-  margin: 0;
-}
-
-.side-column p {
-  text-align: left;
-  width: 100%;
-}
 
 // Bottom Row
+
+.weather-empty {
+  display: none;
+    @include media($desktop) {
+
+    height: 300px;
+    @include span-columns(3);
+  }
+}
 
 .article-featured {
   background-color: $color-primary--body;
@@ -109,13 +76,6 @@
   }
 }
 
-.article-featured img {
-  width: 30%;
-  @include media($mobile) {
-    width: 100%;
-  }
-}
-
 .stacked-article {
   background-color: $color-primary--body;
   @extend %border-top;
@@ -123,10 +83,17 @@
   padding: 5px;
   height: 100px;
   width: 98%;
-
 }
 
-//Images, Text, and other details
+
+//Images
+
+.article-featured img {
+  width: 30%;
+  @include media($mobile) {
+    width: 100%;
+  }
+}
 
 .badass-eagle {
   width: 100%;
@@ -138,6 +105,21 @@
   }
 }
 
+.side-column img {
+  width: 30%;
+  @include media($mobile) {
+    width: 100%;
+  }
+}
+
+.fa-commenting {
+  color: $color-headline--text;
+  padding: 10px 5px 5px 5px;
+  font-size: $base__font-size * 0.8;
+}
+
+//Text
+
 .headline {
   color: $color-headline;
   font-size: $base__font-size * 1.25;
@@ -148,11 +130,6 @@
   font-size: $base__font-size * 1.25;
 }
 
-hr {
-  border-top: 1px dotted #8c8b8b;
-  width: 40%;
-  align: left;
-}
 
 figcaption {
   padding-left: 5px;
@@ -160,11 +137,22 @@ figcaption {
   @include media($mobile) {
     width: 25%;
     float: left;
+    }
   }
+
+h3 {
+color: $color-headline--text;
+
+  @include media($desktop) {
+    display: none;
+    }
+  }
+
+h4 {
+ margin: 0;
 }
 
-.fa-commenting {
-  color: $color-headline--text;
-  padding: 10px 5px 5px 5px;
-  font-size: $base__font-size * 0.8;
+.side-column p {
+ text-align: left;
+ width: 100%;
 }
