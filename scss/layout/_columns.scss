@@ -28,6 +28,7 @@
 }
 
 .side-column {
+  overflow: hidden;
   @extend %col-padding;
   @extend %border-top;
   background-color: $color-primary--body;
@@ -43,6 +44,8 @@
     }
   }
 }
+
+
 
 .offset-col {
   display: none;
@@ -166,6 +169,20 @@
   }
 }
 
+.side-column p, h4 {
+  @extend %text-mobile;
+
+  @include media($mobile) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.side-column img {
+  float: left;
+  width: 30%;
+}
+
 .side-column img {
   width: 30%;
   @include media($mobile) {
@@ -186,6 +203,10 @@
 
 //Text
 
+p {
+  margin-top: 5px;
+}
+
 .headline-text {
   color: $color-headline--text;
 }
@@ -200,6 +221,7 @@ figcaption {
   }
 
 h3 {
+  @extend %blue-headline--big;
   @include media($desktop) {
     display: none;
   }

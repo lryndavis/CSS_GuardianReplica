@@ -4,10 +4,11 @@
   @include outer-container;
   background-color: $color-secondary--body;
   margin-top: 20px;
+  margin-bottom: 20px;
 
     @include media($mobile) {
       margin-left: auto;
-      margin-bottom: 20px;
+
 
     }
     @include media($desktop) {
